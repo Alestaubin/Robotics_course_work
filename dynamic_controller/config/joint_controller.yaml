@@ -1,0 +1,4 @@
+#Parameters:
+damping: 8
+stiffness: 20
+k_att: 7

@@ -1,0 +1,5 @@
+#parameters: 
+k_0: 3
+c_att: 3.5
+c_cubic: 100
+c_omega: 12

@@ -1,0 +1,10 @@
+<launch>
+
+    <include file="$(find cubic_polynomial_planner)/launch/pose_action_server.launch" />
+    <rosparam command="load" file="$(find highlevel_controller)/config/a7.yaml" />
+    <rosparam command="load" file="$(find cubic_polynomial_planner)/config/pose_controller.yaml" />
+    <rosparam command="load" file="$(find highlevel_controller)/config/a7-clean-2.yaml" />
+    <node name="pose_command_action_client" pkg="highlevel_controller" type="pose_command_action_client" output="screen"/>
+	<node name="kinematic_controller" pkg="cubic_polynomial_planner" type="kinematic_controller" output="screen"/>
+
+</launch>

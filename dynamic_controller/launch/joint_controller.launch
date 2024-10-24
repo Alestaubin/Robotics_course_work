@@ -1,0 +1,7 @@
+<launch>
+
+	<rosparam command="load" file="$(find dynamic_controller)/config/joint_controller.yaml" />
+
+	<node name="joint_dynamic_controller" pkg="dynamic_controller" type="joint_dynamic_controller" output="screen" />
+
+</launch>

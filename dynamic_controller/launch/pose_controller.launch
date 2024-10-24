@@ -1,0 +1,7 @@
+<launch>
+
+	<rosparam command="load" file="$(find dynamic_controller)/config/pose_controller.yaml" />
+
+	<node name="inverse_dynamic_controller" pkg="dynamic_controller" type="inverse_dynamic_controller" output="screen"/>
+
+</launch>

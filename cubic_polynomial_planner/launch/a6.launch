@@ -1,0 +1,7 @@
+<launch>
+
+	<rosparam command="load" file="$(find cubic_polynomial_planner/config/pose_controller.yaml" />
+	<rosparam command="load" file="$(find cubic_polynomial_planner)/config/a6.yaml" />
+	<node name="inverse_kinematic_controller" pkg="cubic_polynomial_planner" type="inverse_kinematic_controller" output="screen"/>
+	
+</launch>
